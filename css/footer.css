@@ -1,0 +1,186 @@
+footer {
+  width: 100%;
+  margin-top: 3rem;
+}
+footer .contact-us {
+  width: 100%;
+  padding: 0.9rem 12.5rem;
+  background-color: var(--primary-500);
+  height: 9.25rem;
+  align-items: start;
+}
+footer h2 {
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-300);
+}
+.contact-us-info {
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.contact-us-icon {
+  background-color: var(--orange);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+}
+.contact-us-info div.flex-hz {
+  gap: 0.5rem;
+}
+.contact-us-info div.flex-hz a {
+  color: var(--text-950) !important;
+}
+.contact-us-info div.flex-hz a:hover {
+  color: var(--text-950) !important;
+  cursor: pointer;
+}
+.about-us {
+  height: 30.2rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  gap: 2rem;
+}
+.about-us .footer-bg {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.1;
+  position: absolute;
+}
+.about-us-content {
+  width: 100%;
+  padding: 0.9rem 12.5rem;
+  gap: 1rem;
+  align-items: start;
+}
+.about-us-right,
+.about-us-left {
+  align-items: start;
+}
+.about-us-left {
+  padding-right: 1.4rem;
+  width: 44rem;
+  gap: 1rem;
+}
+.about-us-right {
+  padding-left: 1.4rem;
+  gap: 12px;
+  width: 38.2rem;
+  border-left: 1px solid var(--text-300);
+}
+.about-us-right p {
+  font-size: 14px !important;
+}
+.about-us-left div.flex-hz {
+  gap: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+.about-us-left div.flex-hz a {
+  font-size: 14px !important;
+  color: var(--text-600) !important;
+}
+.about-us-left div.flex-hz a:hover {
+  color: var(--primary-500) !important;
+}
+.footer-symbols {
+  margin-top: 0.6rem;
+}
+.border {
+  border: 1px solid #d7d4d2;
+  border-radius: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 3px;
+  overflow: hidden;
+}
+.border img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.footer-last-div {
+  width: 100%;
+  justify-content: space-between;
+  padding: 00 12.5rem;
+}
+.footer-last-div div.flex-hz {
+  gap: 1rem;
+}
+.footer-last-div div.flex-hz p {
+  font-size: 12px !important;
+  color: var(--text-600);
+}
+.social-media {
+  height: 100%;
+  margin-bottom: 0 !important;
+}
+@media screen and (max-width: 650px) {
+  footer .contact-us {
+    padding: 1rem 2.7rem;
+    height: 23.25rem;
+  }
+  .contact-us-info {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .about-us .footer-bg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute;
+  }
+  .about-us-content {
+    flex-direction: column;
+    padding: 0 2.5rem;
+  }
+  .about-us {
+    height: 76.2rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    gap: 2rem;
+  }
+  .about-us-right {
+    padding-left: 0;
+    gap: 12px;
+    width: 100%;
+    border-left: none;
+  }
+  .about-us-left {
+    padding-right: 0;
+    width: 100%;
+    gap: 1rem;
+  }
+  .about-us-left div.flex-hz {
+    gap: 1.5rem;
+    margin-bottom: 1.4rem;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+  }
+  .social-media {
+    height: 100%;
+    margin-bottom: 0 !important;
+    gap: 1.5rem !important;
+    flex-wrap: nowrap !important;
+  }
+  .footer-last-div {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.4rem;
+  }
+  .footer-last-div div.flex-hz {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: start;
+  }
+}
