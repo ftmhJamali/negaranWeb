@@ -163,10 +163,6 @@ main section form.search-box {
 }
 
 #bottom-search-box1 {
-  /* position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  display: none !important; */
   transition: all 0.2s ease-in-out;
   width: 100%;
   height: 84px;
