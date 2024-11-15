@@ -396,7 +396,7 @@ p.services-desc {
 .questions-btn-container {
   gap: 1.5rem;
 }
-.questions-btn-container input[type="radio"] {
+.common-questions-container input[type="radio"] {
   display: none !important;
 }
 .questions-btn-container label {
@@ -408,17 +408,45 @@ p.services-desc {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-#q-radio-btn1:checked ~ label#qustion-label1 {
+#q-radio-btn1:checked ~ .questions-btn-container label#qustion-label1 {
   background-color: var(--primary-500);
   color: var(--white);
 }
-#q-radio-btn2:checked ~ label#qustion-label2 {
+#q-radio-btn2:checked ~ .questions-btn-container label#qustion-label2 {
   background-color: var(--primary-500);
   color: var(--white);
 }
-#q-radio-btn3:checked ~ label#qustion-label3 {
+#q-radio-btn3:checked ~ .questions-btn-container label#qustion-label3 {
   background-color: var(--primary-500);
   color: var(--white);
+}
+div#q-box-1,
+div#q-box-2,
+div#q-box-3 {
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+#q-radio-btn1:checked ~ div#q-box-1 {
+  display: flex;
+  animation: animate-qst-revealer 0.35s ease-in-out forwards;
+}
+#q-radio-btn2:checked ~ div#q-box-2 {
+  display: flex;
+  animation: animate-qst-revealer 0.35s ease-in-out forwards;
+}
+#q-radio-btn3:checked ~ div#q-box-3 {
+  display: flex;
+  animation: animate-qst-revealer 0.35s ease-in-out forwards;
+}
+@keyframes animate-qst-revealer {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .questions-box-container {
   width: 100%;
